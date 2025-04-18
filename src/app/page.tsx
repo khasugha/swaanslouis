@@ -1,6 +1,6 @@
 'use client';
 
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -27,15 +27,19 @@ export default function Home() {
             </div>
             <div className="text-center md:text-left">
               <h1 className="heading mb-4">Louis Swaans</h1>
-              <p className="subheading mb-8">Full Stack Developer & IT Specialist</p>
+              <p className="subheading mb-4">Full Stack Developer & IT Specialist</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 flex items-center justify-center md:justify-start">
+                <FaPhone className="mr-2" />
+                <a href="tel:+32479016294" className="hover:text-primary">+32 479 016 294</a>
+              </p>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   <FaGithub className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="https://www.linkedin.com/in/louis-swaans-519b602a1/" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   <FaLinkedin className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="mailto:swaanslouis@qq.com" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   <FaEnvelope className="w-6 h-6" />
                 </a>
               </div>
@@ -50,17 +54,29 @@ export default function Home() {
           <h2 className="heading mb-8">About Me</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <p className="text-lg mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
               <p className="text-lg">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Computers have been my passion since I was a young child, studying a variety of topics and making various projects. From writing websites to assembling computers and setting up networks, I've always been fascinated by the endless possibilities of technology.
               </p>
             </div>
             <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['React', 'TypeScript', 'Node.js', 'Python', 'SQL', 'Git', 'AWS', 'Docker', 'GraphQL', 'MongoDB'].map((skill) => (
+                {[
+                  'React', 
+                  'TypeScript', 
+                  'Node.js', 
+                  'Python', 
+                  'C#', 
+                  'ASP.NET', 
+                  'SQL', 
+                  'Git', 
+                  'Docker', 
+                  'Network Setup', 
+                  'Computer Building', 
+                  'Virtualization', 
+                  'Hardware Troubleshooting', 
+                  'System Administration'
+                ].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1 bg-white dark:bg-gray-700 rounded-full text-sm"
@@ -163,18 +179,33 @@ export default function Home() {
       {/* Contact Section */}
       <section className="section">
         <div className="container">
-          <h2 className="heading mb-8">Get in Touch</h2>
+          <h2 className="heading mb-8">Professional Availability</h2>
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-lg mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              Open to new opportunities in software development and IT consulting.
             </p>
-            <a
-              href="#"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark"
-            >
-              <FaEnvelope className="mr-2" />
-              Send me an email
-            </a>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="mailto:swaanslouis@qq.com"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark"
+              >
+                <FaEnvelope className="mr-2" />
+                Contact Me
+              </a>
+              <a
+                href="https://www.linkedin.com/in/louis-swaans-519b602a1/"
+                className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700"
+              >
+                <FaLinkedin className="mr-2" />
+                Connect on LinkedIn
+              </a>
+            </div>
+            <div className="mt-6 text-gray-600 dark:text-gray-400">
+              <p className="flex items-center justify-center">
+                <FaPhone className="mr-2" />
+                <a href="tel:+32479016294" className="hover:text-primary">+32 479 016 294</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
