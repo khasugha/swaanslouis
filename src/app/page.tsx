@@ -98,12 +98,12 @@ export default function Home() {
             {/* Project Card 1 */}
             <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">E-Commerce Platform</h3>
+                <h3 className="text-xl font-semibold mb-2">Personal CV Website</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  A modern, responsive CV website built with Next.js, TypeScript, and Tailwind CSS. Features include dark mode and a clean, professional design.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['React', 'Node.js', 'MongoDB'].map((tech) => (
+                  {['React', 'Next.js', 'TypeScript', 'Tailwind CSS'].map((tech) => (
                     <span
                       key={tech}
                       className="px-2 py-1 bg-gray-100 dark:bg-gray-600 rounded-full text-sm"
@@ -113,7 +113,7 @@ export default function Home() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="https://github.com/khasugha/swaanslouis"
                   className="text-primary hover:text-primary-dark font-medium"
                 >
                   View Project →
