@@ -33,7 +33,7 @@ export default function Home() {
                 <a href="tel:+32479016294" className="hover:text-primary">+32 479 016 294</a>
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
-                <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a href="https://github.com/khasugha" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                   <FaGithub className="w-6 h-6" />
                 </a>
                 <a href="https://www.linkedin.com/in/louis-swaans-519b602a1/" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
@@ -124,12 +124,12 @@ export default function Home() {
             {/* Project Card 2 */}
             <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Task Management App</h3>
+                <h3 className="text-xl font-semibold mb-2">Frontline Games Webshop</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  A basic webshop built with Flask and Python, featuring user authentication, product management, and shopping cart functionality.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['TypeScript', 'React', 'GraphQL'].map((tech) => (
+                  {['Python', 'Flask', 'SQL', 'HTML/CSS'].map((tech) => (
                     <span
                       key={tech}
                       className="px-2 py-1 bg-gray-100 dark:bg-gray-600 rounded-full text-sm"
@@ -139,7 +139,7 @@ export default function Home() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="https://github.com/khasugha/frontline-games"
                   className="text-primary hover:text-primary-dark font-medium"
                 >
                   View Project →
@@ -150,12 +150,12 @@ export default function Home() {
             {/* Project Card 3 */}
             <div className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">AI Content Generator</h3>
+                <h3 className="text-xl font-semibold mb-2">Asteroids Game</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  A classic Asteroids game recreated in Unity, featuring smooth controls, particle effects, and score tracking. Built with C# and Unity's game engine.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {['Python', 'TensorFlow', 'React'].map((tech) => (
+                  {['C#', 'Unity', 'Game Development', 'ShaderLab'].map((tech) => (
                     <span
                       key={tech}
                       className="px-2 py-1 bg-gray-100 dark:bg-gray-600 rounded-full text-sm"
@@ -165,7 +165,7 @@ export default function Home() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="https://github.com/khasugha/Asteroids"
                   className="text-primary hover:text-primary-dark font-medium"
                 >
                   View Project →
